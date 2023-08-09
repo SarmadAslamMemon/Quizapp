@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_signup"
+    tools:context=".age_choose"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:src="@drawable/desidn2home"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#05554E"
+        android:text="Kids"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#FFC107"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#05554E"
+        android:text="Teenagers"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:backgroundTint="#FFC107"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="40dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#05554E"
+        android:text="Adults"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:backgroundTint="#FFC107"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/ageanimation1"
+        android:layout_marginLeft="100dp" />
+
+</LinearLayout>
