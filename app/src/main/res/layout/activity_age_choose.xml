@@ -8,58 +8,75 @@
     tools:context=".age_choose"
     android:layout_gravity="center"
     android:orientation="vertical">
-    <ImageView
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        android:src="@drawable/desidn2home"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#05554E"
-        android:text="Kids"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:backgroundTint="#FFC107"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#05554E"
-        android:text="Teenagers"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:backgroundTint="#FFC107"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="40dp" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#05554E"
-        android:text="Adults"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:backgroundTint="#FFC107"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        />
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/ageanimation1"
-        android:layout_marginLeft="100dp" />
+      />
+    <Button
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#FFC107"
+        android:cursorVisible="true"
+        android:text="Kids"
+        android:textColor="#05554E"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:rippleColor="#072525"
+        app:strokeColor="@color/black" />
+
+    <Button
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#FFC107"
+        android:text="Teenagers"
+        android:textColor="#05554E"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:rippleColor="#072525" />
+
+    <Button
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:backgroundTint="#FFC107"
+        android:text="Adults"
+        android:textColor="#05554E"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:rippleColor="#072525" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationchoose"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="#FFC107"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/ageanimationchoose"
+        />
+
 
 </LinearLayout>

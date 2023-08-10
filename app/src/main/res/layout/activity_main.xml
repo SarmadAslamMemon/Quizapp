@@ -8,16 +8,7 @@
     android:background="@drawable/background_signup"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/backgroundtopbottom"
-        android:layout_marginTop="-15dp"/>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/backgroundtop"
-        android:layout_marginTop="-110dp"/>
+
 
 
 
@@ -34,7 +25,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/homeanimation" />
@@ -44,11 +35,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#FFC107"
         android:text="Login"
-        android:textColor="#12474E" />
+        android:textColor="#12474E"
+        app:rippleColor="#12474E" />
 
     <Button
         android:id="@+id/signup"
@@ -57,16 +49,11 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#FFC107"
         android:text="SignUp"
-        android:textColor="#12474E" />
+        android:textColor="#12474E"
+        app:rippleColor="#12474E" />
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="end"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:src="@drawable/desidn2home" />
+
 
 </LinearLayout>
