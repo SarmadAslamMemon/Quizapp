@@ -13,16 +13,19 @@
         android:theme="@style/Theme.Quizapp"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".age_choose"
             android:exported="false" />
         <activity
             android:name=".Signup"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".age_choose"
+            android:name=".testing"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

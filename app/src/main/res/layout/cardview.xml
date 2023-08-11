@@ -2,13 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/background_signup"
-    >
+    android:background="@drawable/background_signup">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:cardCornerRadius="20dp"
+       app:cardCornerRadius="15dp"
         android:backgroundTint="#FFC107"
         android:layout_margin="10dp"
         android:elevation="10dp"
@@ -26,7 +26,6 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/noman"
-                    android:civ_border_color="#FF000000"
                     android:layout_margin="10dp">
 
                 </de.hdodenhof.circleimageview.CircleImageView>
