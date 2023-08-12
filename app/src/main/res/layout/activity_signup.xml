@@ -11,10 +11,10 @@
     android:padding="20dp">
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/homeanimation" />
@@ -23,7 +23,7 @@
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         app:lottie_autoPlay="true"
         app:lottie_colorFilter="#FFC107"
         app:lottie_loop="true"
@@ -41,7 +41,11 @@
                 android:layout_marginTop="8dp"
                 android:hint="Enter Name"
                 android:id="@+id/sname"
-                android:inputType="text"/>
+                android:inputType="text"
+                android:digits="abcdefghijklmnopqrstuvwxyzQWERTYUIOPLKJHGFDSAZXCVBNM_"
+                android:textColor="@color/white"/>
+
+
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -52,8 +56,9 @@
                 android:layout_marginTop="8dp"
                 android:hint="Enter Email"
                 android:id="@+id/semail"
-
-                android:inputType="textEmailAddress"/>
+                android:digits="abcdefghijklmnopqrstuvwxyzQWERTYUIOPLKJHGFDSAZXCVBNM_@.0123456789"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"/>
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -64,8 +69,9 @@
                 android:layout_marginTop="8dp"
                 android:hint="Enter Phone"
                 android:id="@+id/sphone"
-
-                android:inputType="number"/>
+                android:inputType="number"
+                android:digits="0123456789"
+                android:textColor="@color/white"/>
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -76,7 +82,8 @@
                 android:layout_marginTop="8dp"
                 android:hint="Enter Password"
                 android:id="@+id/spassword"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword"
+                android:textColor="@color/white"/>
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
@@ -87,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
         android:backgroundTint="#FFC107"
@@ -95,15 +102,27 @@
         android:textColor="#12373C"
         app:rippleColor="#12373C" />
 
-    <TextView
-        android:id="@+id/haveAccount"
-        android:layout_width="match_parent"
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:clickable="true"
-        android:gravity="center_horizontal"
-        android:text="Already Have an account"
-        android:textAlignment="center"
-        android:textColor="#FFC107" />
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Already have an account ?"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login "
+            android:layout_margin="10dp"
+            android:textColor="@color/Yellow"
+            android:id="@+id/lgtxt"/>
+
+    </LinearLayout>
 
 </LinearLayout>

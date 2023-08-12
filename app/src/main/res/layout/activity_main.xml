@@ -20,39 +20,24 @@
         android:src="@drawable/designhome" />
 
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/homeanimation" />
 
-    <Button
-        android:id="@+id/login"
+        android:src="@drawable/logo"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="#FFC107"
-        android:text="Login"
-        android:textColor="#12474E"
-        app:rippleColor="#12474E" />
+        android:gravity="center"
+        android:text="Ignite Your Curiosity, Quiz On!"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+/>
 
-    <Button
-        android:id="@+id/signup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="#FFC107"
-        android:text="SignUp"
-        android:textColor="#12474E"
-        app:rippleColor="#12474E" />
 
 
 

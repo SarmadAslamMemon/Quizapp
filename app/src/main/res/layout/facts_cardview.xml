@@ -87,10 +87,8 @@
                 android:layout_margin="20dp"
                 android:paddingBottom="20dp"
                 android:paddingTop="20dp"
-
                 android:text="Butterflies can't taste with
-                 their mouths, so they use their feet
-                 to find out if a plant is good to eat."
+                 their mouths, so they use their feet to find out if a plant is good to eat."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold"
