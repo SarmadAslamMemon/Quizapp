@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/homeicon"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/facticon"
+        android:title="Facts"
+        android:icon="@drawable/baseline_fact_check_24"/>
+    <item
+        android:id="@+id/leaderboardicon"
+        android:title="LeaderBoard"
+        android:icon="@drawable/baseline_leaderboard_24"/>
+    <item
+        android:id="@+id/quizicon"
+        android:title="Quiz"
+        android:icon="@drawable/baseline_quiz_24"/>
+    <item
+        android:id="@+id/bookmarkicon"
+        android:title="Bookmark"
+        android:icon="@drawable/baseline_bookmark_24"/>
+</menu>
