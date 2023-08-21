@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i =new Intent(MainActivity.this, HomeScreen.class);
+                Intent i =new Intent(MainActivity.this, facts_cardview.class);
                 startActivity(i);
                 finish();
 

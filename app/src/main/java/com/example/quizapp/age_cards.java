@@ -32,12 +32,12 @@ public class age_cards extends AppCompatActivity implements View.OnClickListener
         Intent i;
 
         if (view.getId() == R.id.kids_card){
-        i = new Intent(this,Signup.class);startActivity(i);
+        i = new Intent(this,Login.class);startActivity(i);
         }
         else if (view.getId() == R.id.teenager_card) {
-            i = new Intent(this,Signup.class);startActivity(i);
+            i = new Intent(this,Login.class);startActivity(i);
         } else if (view.getId()== R.id.adult_card) {
-            i = new Intent(this,Signup.class);startActivity(i);
+            i = new Intent(this,Login.class);startActivity(i);
         }
     }
 }

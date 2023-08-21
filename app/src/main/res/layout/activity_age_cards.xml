@@ -71,7 +71,7 @@
                     android:gravity="center"
                     android:backgroundTint="@color/black"
                     android:layout_margin="5dp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     />
 
 
@@ -97,14 +97,14 @@
                 android:orientation="vertical"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:background="@color/black"
+                android:background="@color/LightGreen"
                 >
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/LightGreen"
+                    android:textColor="@color/white"
                     android:text="Teenagers"
                     android:textStyle="bold"
                     android:textSize="30dp"
@@ -120,7 +120,7 @@
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:gravity="center"
-                   android:textColor="@color/LightGreen"
+                   android:textColor="@color/white"
                     android:layout_margin="5dp"
                     />
 
@@ -152,7 +152,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#FFCF07"
+                    android:textColor="@color/white"
                     android:text="Adult"
                     android:textStyle="bold"
                     android:textSize="30dp"
@@ -168,7 +168,7 @@
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:gravity="center"
-                    android:textColor="#FFCF07"
+                    android:textColor="@color/white"
                     android:layout_margin="5dp"
                     />
 

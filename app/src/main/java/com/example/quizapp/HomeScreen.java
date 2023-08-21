@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -13,20 +15,22 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class HomeScreen extends AppCompatActivity {
     BottomNavigationView bottomview;
-     homefragment homefrag =new homefragment();
-     factfragment factfrag =new factfragment();
+     homefragment homefragment =new homefragment();
+
+
+    Profile profilefragment =new Profile();
      leaderboardfragment leaderboardfrag =new leaderboardfragment();
-     quizfragment quizfrag =new quizfragment();
+
      bookmarkfragment bookmarkfrag =new bookmarkfragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_home_screen);
-
         bottomview=findViewById(R.id.bottomnavigation);
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, homefrag).commit();
-
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new homefragment()).commit();
         bottomview.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @SuppressLint("NonConstantResourceId")
             @Override
@@ -35,15 +39,20 @@ public class HomeScreen extends AppCompatActivity {
                 int itemId = item.getItemId();
 
                 if (itemId == R.id.homeicon) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, homefrag).commit();
-                } else if (itemId == R.id.facticon) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, factfrag).commit();
-                } else if (itemId == R.id.leaderboardicon) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, homefragment).commit();
+                    return true;
+                }
+                else if (itemId == R.id.leaderboardicon) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, leaderboardfrag).commit();
-                } else if (itemId == R.id.quizicon) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container, quizfrag).commit();
-                } else if (itemId == R.id.bookmarkicon) {
+                    return true;
+                }
+                else if (itemId == R.id.profileicon) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, profilefragment).commit();
+                    return true;
+                }
+                else if (itemId == R.id.bookmarkicon) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.container, bookmarkfrag).commit();
+                    return true;
                 }
 
                 return false;
