@@ -82,6 +82,7 @@
                 android:layout_marginTop="8dp"
                 android:hint="Enter Password"
                 android:id="@+id/spassword"
+                app:passwordToggledEnable="true"
                 android:inputType="textPassword"
                 android:textColor="@color/white"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -124,5 +125,13 @@
             android:id="@+id/lgtxt"/>
 
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
 
 </LinearLayout>
