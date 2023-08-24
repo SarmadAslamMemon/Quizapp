@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -57,11 +58,21 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder> {
     public static class ViewHolder extends  RecyclerView.ViewHolder{
 
         TextView textView;
-
+        View rootview;
+        CardView topiccard;
         public ViewHolder(@NonNull View itemView) {
-
             super(itemView);
+            rootview=itemView;
             textView=itemView.findViewById(R.id.subjecttitle);
+            topiccard=itemView.findViewById(R.id.list_item);
+
+            topiccard.setOnClickListener(view -> {
+            Intent i=new Intent(rootview.getContext(), factsubcard.class);
+            rootview.getContext().startActivity(i);
+            });
+
+
+
         }
 
         public TextView getTextView() {

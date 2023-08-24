@@ -1,7 +1,9 @@
 package com.example.quizapp;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -21,15 +23,17 @@ public class homefragment extends Fragment {
   RecyclerView recyclerView ;
   ArrayList<model>subjects;
 
+    CardView subfactcard;
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
 
+
+
+
         View view = inflater.inflate(R.layout.fragment_homefragment, container, false);
-
-
-
         subjects=new ArrayList<>();
         subjects.add(new model("Physics"));
         subjects.add(new model("Chemistry"));
@@ -42,15 +46,19 @@ public class homefragment extends Fragment {
 
 
         recyclerView=view.findViewById(R.id.recycler);
+
         Myadapter myadapter = new Myadapter(view.getContext(),subjects);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
-
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(layoutManager);
 
 
         recyclerView.setAdapter(myadapter);
         return view;
+
+
+
+
+
     }
 }
