@@ -8,12 +8,12 @@
 
     <item
         android:id="@+id/leaderboardicon"
-        android:title="LeaderBoard"
-        android:icon="@drawable/baseline_leaderboard_24"/>
+        android:title="Quizez"
+        android:icon="@drawable/baseline_quiz_24"/>
 
     <item
         android:id="@+id/bookmarkicon"
-        android:title="Bookmark"
+        android:title="Preparation"
         android:icon="@drawable/baseline_bookmark_24"/>
 
 

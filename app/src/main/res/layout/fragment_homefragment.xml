@@ -1,41 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homefragment">
+    android:orientation="vertical">
 
+    <!-- CardView at the top with a circular profile image and user's name -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:backgroundTint="#FFC107"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_gravity="top">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+      android:gravity="center"
+            android:layout_margin="10dp">
 
-    <LinearLayout
+            <!-- Circular profile image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/appicon"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FFFFFF"
+                android:layout_gravity="center_horizontal"/>
+
+            <!-- TextView for user's name -->
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="Users Name"
+                android:textSize="22dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center">
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="Most Imporatant Questions"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
 
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/black"
         />
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/recycler"
-        android:background="#2CFFEB38"
-        />
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerinHome"/>
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/black"
-        />
+    <!-- Other content of your home fragment goes here -->
 
-
-    </LinearLayout>
-
-
-</FrameLayout>
+</LinearLayout>

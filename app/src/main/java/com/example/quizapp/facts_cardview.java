@@ -2,6 +2,7 @@ package com.example.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -27,10 +28,19 @@ public class facts_cardview extends AppCompatActivity {
         public void onClick(View view) {
 
 
-            Intent i =new Intent(facts_cardview.this, age_cards.class);
-            startActivity(i);
-            finish();
+            SessionManager sessionManager = new SessionManager((Application) getApplicationContext());
 
+            if (sessionManager.isLoggedIn()) {
+                // User is already logged in, load the main content or a fragment
+                Intent i =new Intent(facts_cardview.this, HomeScreen.class);
+                startActivity(i);
+                finish();
+            }else {
+
+                Intent i = new Intent(facts_cardview.this, Login.class);
+                startActivity(i);
+                finish();
+            }
 
         }
     });

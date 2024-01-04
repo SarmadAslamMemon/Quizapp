@@ -13,6 +13,8 @@
        android:layout_height="match_parent"
       android:id="@+id/container"
       app:layout_constraintTop_toTopOf="@+id/bottomnavigation"/>
+
+
    <com.google.android.material.bottomnavigation.BottomNavigationView
        android:id="@+id/bottomnavigation"
        android:layout_width="match_parent"
